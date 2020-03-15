@@ -1,0 +1,12 @@
+### Python template
+__pycache__/
+TOKEN
+Procfile
+
+# virtualenv
+.venv
+venv/
+ENV/
+
+# JetBrains
+.idea/
