@@ -90,15 +90,12 @@ def send_text(message):
             SetInformationTable()
             GetAllInformationTable(message)
 
-            x = threading.Thread(target=thread_delay, daemon=False)
-            x.start()
-
         if message.text.lower() == 'новые замены':
             SetInformationTable()
             GetNewReplacements(message)
 
-            x = threading.Thread(target=thread_delay, daemon=False)
-            x.start()
+        x = threading.Thread(target=thread_delay, daemon=False)
+        x.start()
     else:
         if message.text.lower() == 'все расписания занятий':
             GetAllInformationTable(message)
